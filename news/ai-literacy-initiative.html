@@ -1,0 +1,597 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DFA Launches AI Literacy Initiative for 1 Million Learners by 2027 | News | Digital Futures Africa</title><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"><style>
+:root{--nv:#0A0F1A;--nv2:#0E1525;--gn:#009A44;--gd:#FCD116;--rd:#CE1126;--tl:#00C4B4;--wh:#FFFFFF;--ash:#A0A8B0;--dg:#1E2A3A;--mg:#2C3A4E;--fd:'Bebas Neue',sans-serif;--fs:'DM Serif Display',serif;--fb:'DM Sans',sans-serif;--mx:1200px}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--nv);color:var(--wh);overflow-x:hidden}
+a{color:inherit;text-decoration:none}ul{list-style:none}
+.wrap{max-width:var(--mx);margin:0 auto;padding:0 40px}
+.label{font-family:var(--fd);font-size:11px;letter-spacing:5px;color:var(--gd)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:13px 28px;border-radius:2px;cursor:pointer;transition:all .2s;border:none}
+.btn-g{background:var(--gn);color:#fff}.btn-g:hover{background:#00b050;transform:translateY(-2px)}
+.btn-o{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.3)}.btn-o:hover{border-color:var(--gd);color:var(--gd)}
+.btn-gd{background:var(--gd);color:var(--nv)}.btn-gd:hover{background:#ffe033;transform:translateY(-2px)}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(10,15,26,.93);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-in{max-width:var(--mx);margin:0 auto;padding:0 40px;height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:14px}
+.nlm{width:36px;height:48px;flex-shrink:0}
+.lw{display:flex;flex-direction:column;line-height:1}
+.lw .ld{font-family:var(--fd);font-size:9px;letter-spacing:6px;color:var(--gd)}
+.lw .lf{font-family:var(--fd);font-size:21px;letter-spacing:1px}
+.lw .la{font-family:var(--fb);font-size:10px;font-weight:500;letter-spacing:5px;color:var(--gd)}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{font-size:13px;font-weight:500;color:var(--ash);transition:color .2s}.nav-links a:hover{color:#fff}
+.nav-cta{background:var(--gn);color:#fff!important;padding:9px 20px;border-radius:2px;font-weight:700!important}.nav-cta:hover{background:#00b050!important}
+/* STRIPES */
+.stripes{display:flex;height:4px}.stripes s{flex:1;display:block}
+.stripes s:nth-child(1){background:var(--gn)}.stripes s:nth-child(2){background:var(--gd)}.stripes s:nth-child(3){background:var(--rd)}
+/* FOOTER */
+footer{background:var(--nv);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 28px}
+.foot-in{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+.foot-copy{font-size:13px;color:var(--ash)}
+.foot-nav{display:flex;gap:24px}.foot-nav a{font-size:13px;color:var(--ash)}.foot-nav a:hover{color:var(--gd)}
+/* REVEAL */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}.rv.on{opacity:1;transform:none}
+.rv1{transition-delay:.1s}.rv2{transition-delay:.2s}.rv3{transition-delay:.3s}
+@media(max-width:768px){.wrap{padding:0 20px}.nav-links{display:none}}
+
+.art-hero{padding:150px 0 64px;position:relative;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.06)}
+.art-hero-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 90% 90% at 50% 40%,black 20%,transparent 100%)}
+.art-hero-glow{position:absolute;left:-80px;top:15%;width:440px;height:440px;background:radial-gradient(circle,rgba(0,154,68,.15) 0%,transparent 70%)}
+.art-hero-glow2{position:absolute;right:-60px;bottom:0;width:360px;height:360px;background:radial-gradient(circle,rgba(252,209,22,.08) 0%,transparent 70%)}
+.art-meta-bar{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.art-cat{font-family:var(--fd);font-size:10px;letter-spacing:4px;padding:6px 14px;border-radius:2px;background:var(--gn);color:#fff}
+.art-cat.gold{background:var(--gd);color:var(--nv)}
+.art-cat.teal{background:var(--tl);color:var(--nv)}
+.art-date{font-size:13px;color:var(--ash)}
+.art-read{font-size:13px;color:var(--ash)}
+.art-h1{font-family:var(--fd);font-size:clamp(40px,5.5vw,80px);line-height:.94;letter-spacing:1px;margin-bottom:20px;max-width:860px}
+.art-h1 em{color:var(--gd);font-style:normal}
+.art-deck{font-family:var(--fs);font-size:21px;font-style:italic;color:var(--ash);line-height:1.6;max-width:700px;margin-bottom:36px}
+.art-byline{display:flex;align-items:center;gap:14px;padding-top:28px;border-top:1px solid rgba(255,255,255,.07)}
+.art-avatar{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.art-avatar.green{background:linear-gradient(135deg,#0A3D1F,#009A44)}
+.art-avatar.gold{background:linear-gradient(135deg,#3D2800,#FCD116)}
+.art-avatar.teal{background:linear-gradient(135deg,#003D39,#00C4B4)}
+.art-author-name{font-size:15px;font-weight:600}
+.art-author-role{font-size:12px;color:var(--ash)}
+/* image band */
+.art-img{height:420px;overflow:hidden;position:relative}
+.art-img-fill{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:80px}
+.art-img-fill.c1{background:linear-gradient(135deg,#0A3D1F 0%,#009A44 60%,#00C4B4 100%)}
+.art-img-fill.c2{background:linear-gradient(135deg,#3D2800 0%,#FCD116 60%,#F5A623 100%)}
+.art-img-fill.c3{background:linear-gradient(135deg,#003D39 0%,#00C4B4 60%,#0077B6 100%)}
+.art-img-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.7));padding:20px 40px 16px;font-size:13px;color:rgba(255,255,255,.7)}
+/* article content */
+.art-body{padding:64px 0}
+.art-layout{display:grid;grid-template-columns:1fr 300px;gap:64px;align-items:start}
+.art-content h2{font-family:var(--fd);font-size:clamp(28px,3vw,44px);letter-spacing:1px;margin:40px 0 14px;color:#fff}
+.art-content h2 em{color:var(--gd);font-style:normal}
+.art-content h3{font-size:20px;font-weight:700;margin:32px 0 10px;color:#fff}
+.art-content p{font-size:16px;font-weight:300;color:var(--ash);line-height:1.8;margin-bottom:18px}
+.art-content strong{color:#fff;font-weight:600}
+.art-content ul{margin:0 0 18px 0;padding-left:0;display:flex;flex-direction:column;gap:8px}
+.art-content ul li{font-size:15px;color:var(--ash);line-height:1.65;padding-left:20px;position:relative}
+.art-content ul li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--gn)}
+.pullquote{border-left:3px solid var(--gd);padding:20px 24px;background:rgba(252,209,22,.05);border-radius:0 6px 6px 0;margin:32px 0}
+.pullquote p{font-family:var(--fs);font-size:20px;font-style:italic;color:#fff!important;line-height:1.6;margin:0!important}
+/* sidebar */
+.sidebar-card{background:var(--dg);border:1px solid rgba(255,255,255,.07);border-radius:6px;padding:24px;margin-bottom:20px;position:sticky;top:90px}
+.sidebar-card h4{font-family:var(--fd);font-size:10px;letter-spacing:4px;color:var(--gd);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.06)}
+.sidebar-tag{display:inline-block;padding:5px 12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07);border-radius:2px;font-size:12px;margin:0 4px 6px 0;transition:background .2s}.sidebar-tag:hover{background:rgba(0,154,68,.2);border-color:rgba(0,154,68,.4)}
+.related-item{display:flex;flex-direction:column;gap:4px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.05)}.related-item:last-child{border:none}
+.related-cat{font-family:var(--fd);font-size:9px;letter-spacing:3px;color:var(--gd)}
+.related-title{font-size:14px;font-weight:500;line-height:1.4;transition:color .2s}.related-item:hover .related-title{color:var(--gd)}
+/* cta band */
+.art-cta{background:linear-gradient(135deg,var(--nv2),var(--dg));padding:64px 0;border-top:1px solid rgba(255,255,255,.06)}
+.art-cta-in{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+.art-cta h2{font-family:var(--fd);font-size:clamp(32px,4vw,52px);letter-spacing:1px;margin-bottom:10px}
+.art-cta h2 em{color:var(--gd);font-style:normal}
+.art-cta p{font-size:15px;color:var(--ash);max-width:480px;line-height:1.65}
+.art-cta-btns{display:flex;flex-direction:column;gap:10px;flex-shrink:0}
+@media(max-width:900px){.art-layout,.art-cta-in{grid-template-columns:1fr}}
+
+
+/* ═══ NAV (clean rewrite) ════════════════════════════════════ */
+#dfa-nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  background: rgba(10,15,26,0.95);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  transition: box-shadow 0.3s ease;
+}
+#dfa-nav .nav-wrap {
+  max-width: 1200px; margin: 0 auto; padding: 0 40px;
+  height: 72px; display: flex; align-items: center;
+  justify-content: space-between;
+}
+#dfa-nav .nav-logo {
+  display: flex; align-items: center; gap: 14px;
+  text-decoration: none; flex-shrink: 0;
+}
+#dfa-nav .nav-logo-svg { width: 36px; height: 48px; flex-shrink: 0; }
+#dfa-nav .nav-wordmark { display: flex; flex-direction: column; line-height: 1; }
+#dfa-nav .nav-wordmark .nw-dig { font-family: 'Bebas Neue', sans-serif; font-size: 9px; letter-spacing: 6px; color: #FCD116; margin-bottom: 1px; }
+#dfa-nav .nav-wordmark .nw-fut { font-family: 'Bebas Neue', sans-serif; font-size: 21px; letter-spacing: 1px; color: #fff; }
+#dfa-nav .nav-wordmark .nw-afr { font-family: 'DM Sans', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 5px; color: #FCD116; }
+
+/* desktop links */
+#dfa-nav .nav-desktop {
+  display: flex; align-items: center; gap: 32px;
+}
+#dfa-nav .nav-desktop > a {
+  font-size: 13px; font-weight: 500; color: #A0A8B0;
+  text-decoration: none; transition: color 0.2s; white-space: nowrap;
+}
+#dfa-nav .nav-desktop > a:hover { color: #fff; }
+#dfa-nav .nav-desktop .nav-cta-btn {
+  background: #009A44; color: #fff !important; font-weight: 700 !important;
+  padding: 9px 20px; border-radius: 2px;
+}
+#dfa-nav .nav-desktop .nav-cta-btn:hover { background: #00b050 !important; }
+
+/* dropdown */
+#dfa-nav .nav-dd { position: relative; }
+#dfa-nav .nav-dd-trigger {
+  display: flex; align-items: center; gap: 4px;
+  font-size: 13px; font-weight: 500; color: #A0A8B0;
+  cursor: pointer; user-select: none; white-space: nowrap;
+  transition: color 0.2s; padding: 8px 0;
+  background: none; border: none;
+}
+#dfa-nav .nav-dd-trigger:hover { color: #fff; }
+#dfa-nav .nav-dd-trigger svg { transition: transform 0.2s; flex-shrink: 0; }
+#dfa-nav .nav-dd.open .nav-dd-trigger { color: #fff; }
+#dfa-nav .nav-dd.open .nav-dd-trigger svg { transform: rotate(180deg); }
+/* ── Dropdown panel ── */
+#dfa-nav .nav-dd-panel {
+  position: absolute; top: calc(100% + 8px); left: 50%;
+  transform: translateX(-50%);
+  background: rgba(14,21,37,0.98); backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.08); border-radius: 8px;
+  padding: 8px 0; min-width: 250px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  opacity: 0; visibility: hidden;
+  transition: opacity 0.15s ease, visibility 0.15s;
+  z-index: 1001; pointer-events: none;
+}
+/* invisible bridge fills gap between nav bar and panel */
+#dfa-nav .nav-dd-panel::before {
+  content: ''; position: absolute;
+  bottom: 100%; left: 0; right: 0; height: 12px;
+}
+#dfa-nav .nav-dd:hover .nav-dd-panel,
+#dfa-nav .nav-dd.open .nav-dd-panel {
+  opacity: 1; visibility: visible;
+  pointer-events: auto;
+}
+
+/* ── Group label ── */
+#dfa-nav .nav-dd-group-label {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 9px; letter-spacing: 3px; color: #A0A8B0;
+  padding: 8px 18px 4px; pointer-events: none; display: block;
+}
+
+/* ── Group row (hover opens flyout) ── */
+#dfa-nav .nav-dd-group-item {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 14px 10px 18px; cursor: pointer;
+  transition: background 0.15s; position: relative;
+  text-decoration: none; color: inherit;
+}
+#dfa-nav .nav-dd-group-item:hover { background: rgba(255,255,255,0.05); }
+#dfa-nav .nav-dd-group-item-left { display: flex; align-items: center; gap: 12px; }
+#dfa-nav .nav-dd-group-arrow { flex-shrink: 0; opacity: 0.45; transition: opacity 0.2s; }
+#dfa-nav .nav-dd-group-item:hover .nav-dd-group-arrow { opacity: 1; }
+
+/* ── Flyout panel ── */
+#dfa-nav .nav-dd-flyout {
+  position: absolute; left: 100%; top: 0;
+  background: rgba(14,21,37,0.98); backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.08); border-radius: 8px;
+  padding: 8px 0; min-width: 275px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  opacity: 0; visibility: hidden;
+  transition: opacity 0.15s, visibility 0.15s;
+  pointer-events: none; z-index: 1002;
+}
+/* invisible bridge fills gap between group-item edge and flyout */
+#dfa-nav .nav-dd-flyout::before {
+  content: ''; position: absolute;
+  top: 0; right: 100%; width: 8px; height: 100%;
+}
+#dfa-nav .nav-dd-group-item:hover .nav-dd-flyout,
+#dfa-nav .nav-dd-group-item:focus-within .nav-dd-flyout {
+  opacity: 1; visibility: visible; pointer-events: auto;
+}
+
+/* ── Flyout label ── */
+#dfa-nav .nav-dd-flyout-label {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 9px; letter-spacing: 3px; color: #A0A8B0;
+  padding: 8px 16px 4px; pointer-events: none; display: block;
+}
+
+/* ── Items (shared between flyout and footer) ── */
+#dfa-nav .nav-dd-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 9px 16px; text-decoration: none; transition: background 0.15s;
+}
+#dfa-nav .nav-dd-item:hover { background: rgba(255,255,255,0.05); }
+#dfa-nav .nav-dd-icon {
+  width: 32px; height: 32px; border-radius: 7px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; flex-shrink: 0;
+}
+#dfa-nav .nav-dd-name { font-size: 13px; font-weight: 600; color: #fff; display: block; }
+#dfa-nav .nav-dd-sub  { font-size: 11px; color: #A0A8B0; display: block; margin-top: 1px; }
+#dfa-nav .nav-dd-sep  { height: 1px; background: rgba(255,255,255,0.06); margin: 6px 0; }
+
+/* ── Mobile nav ──────────────────────────────────────────────── */
+#dfa-nav .nav-burger {
+  display: none; flex-direction: column; justify-content: space-between;
+  width: 28px; height: 20px; background: none; border: none;
+  cursor: pointer; padding: 0; flex-shrink: 0;
+}
+#dfa-nav .nav-burger span {
+  display: block; width: 100%; height: 2px;
+  background: #fff; border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+#dfa-nav .nav-burger.open span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+#dfa-nav .nav-burger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+#dfa-nav .nav-burger.open span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+
+#dfa-mobile-menu {
+  display: none; flex-direction: column;
+  position: fixed; top: 72px; left: 0; right: 0; bottom: 0;
+  background: rgba(10,15,26,0.98); backdrop-filter: blur(20px);
+  overflow-y: auto; padding: 16px 0 60px;
+  z-index: 999; border-top: 1px solid rgba(255,255,255,0.06);
+}
+#dfa-mobile-menu.open { display: flex; }
+#dfa-mobile-menu a {
+  font-size: 15px; font-weight: 500; color: rgba(255,255,255,0.8);
+  padding: 13px 28px; display: block;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  text-decoration: none; transition: color 0.2s, background 0.2s;
+}
+#dfa-mobile-menu a:hover { color: #FCD116; background: rgba(255,255,255,0.03); }
+#dfa-mobile-menu .mm-cta {
+  margin: 20px 28px 0; display: inline-block; padding: 12px 24px;
+  background: #009A44; color: #fff !important;
+  border-radius: 2px; font-weight: 700 !important;
+  border-bottom: none !important; text-align: center;
+}
+#dfa-mobile-menu .mm-cta:hover { background: #00b050 !important; }
+#dfa-mobile-menu .mm-section {
+  font-family: 'Bebas Neue', sans-serif; font-size: 9px;
+  letter-spacing: 4px; color: #A0A8B0;
+  padding: 20px 28px 6px; pointer-events: none;
+}
+
+@media (max-width: 860px) {
+  #dfa-nav .nav-desktop { display: none; }
+  #dfa-nav .nav-burger  { display: flex; }
+}
+
+</style></head><body>
+<nav id="dfa-nav">
+  <div class="nav-wrap">
+    <a href="../index.html" class="nav-logo">
+      <svg class="nav-logo-svg" viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="nc"><path d="M 34.6,7.5 L 80.3,3.2 L 122.9,23.2 L 157.1,27.8 L 175.7,93.3 L 198.0,94.4 L 177.1,141.4 L 171.1,172.7 L 167.1,188.8 L 152.9,197.7 L 152.3,220.5 L 145.4,230.8 L 134.3,245.8 L 130.0,254.7 L 104.3,257.9 L 100.3,251.8 L 94.3,238.6 L 85.1,197.0 L 86.3,156.0 L 78.0,131.8 L 61.1,112.9 L 58.9,112.5 L 56.0,113.3 L 51.1,115.4 L 42.9,117.2 L 40.0,116.8 L 30.0,119.7 L 22.0,110.8 L 13.7,105.1 L 8.3,96.5 L 3.7,91.5 L 1.4,83.0 L 2.9,61.6 L 2.9,59.5 L 13.7,50.9 L 26.6,36.7 Z"/></clipPath></defs><path d="M 34.6,7.5 L 80.3,3.2 L 122.9,23.2 L 157.1,27.8 L 175.7,93.3 L 198.0,94.4 L 177.1,141.4 L 171.1,172.7 L 167.1,188.8 L 152.9,197.7 L 152.3,220.5 L 145.4,230.8 L 134.3,245.8 L 130.0,254.7 L 104.3,257.9 L 100.3,251.8 L 94.3,238.6 L 85.1,197.0 L 86.3,156.0 L 78.0,131.8 L 61.1,112.9 L 58.9,112.5 L 56.0,113.3 L 51.1,115.4 L 42.9,117.2 L 40.0,116.8 L 30.0,119.7 L 22.0,110.8 L 13.7,105.1 L 8.3,96.5 L 3.7,91.5 L 1.4,83.0 L 2.9,61.6 L 2.9,59.5 L 13.7,50.9 L 26.6,36.7 Z" fill="#1E2A3A"/><g clip-path="url(#nc)" opacity="0.93"><polygon points="49.0,0.5 53.2,7.0 49.0,13.5 44.8,7.0" fill="#FCD116" opacity="0.85"/>
+<polygon points="67.8,4.2 67.8,9.8 63.0,12.6 58.2,9.8 58.2,4.2 63.0,1.4" fill="#F5A623" opacity="0.90"/>
+<circle cx="77.0" cy="7.0" r="5.9" fill="none" stroke="#FFE066" stroke-width="2.2" opacity="0.95"/>
+<polygon points="35.0,14.5 39.2,21.0 35.0,27.5 30.8,21.0" fill="#CCCCCC" opacity="0.85"/>
+<polygon points="53.8,18.2 53.8,23.8 49.0,26.6 44.2,23.8 44.2,18.2 49.0,15.4" fill="#00C4B4" opacity="0.90"/>
+<circle cx="63.0" cy="21.0" r="5.9" fill="none" stroke="#0077B6" stroke-width="2.2" opacity="0.95"/>
+<rect x="71.8" y="15.8" width="10.3" height="10.3" fill="#FF6677" opacity="0.85" rx="1.5"/>
+<circle cx="91.0" cy="21.0" r="5.9" fill="#FFFFFF" opacity="0.90"/>
+<polygon points="105.0,14.5 110.6,24.2 99.4,24.2" fill="#CCCCCC" opacity="0.95"/>
+<polygon points="39.8,32.2 39.8,37.8 35.0,40.6 30.2,37.8 30.2,32.2 35.0,29.4" fill="#FFE066" opacity="0.90"/>
+<circle cx="49.0" cy="35.0" r="5.9" fill="none" stroke="#CE1126" stroke-width="2.2" opacity="0.95"/>
+<rect x="57.8" y="29.8" width="10.3" height="10.3" fill="#4DC97A" opacity="0.85" rx="1.5"/>
+<circle cx="77.0" cy="35.0" r="5.9" fill="#FCD116" opacity="0.90"/>
+<polygon points="91.0,28.5 96.6,38.2 85.4,38.2" fill="#F5A623" opacity="0.95"/>
+<polygon points="105.0,28.5 109.2,35.0 105.0,41.5 100.8,35.0" fill="#FFE066" opacity="0.85"/>
+<polygon points="123.8,32.2 123.8,37.8 119.0,40.6 114.2,37.8 114.2,32.2 119.0,29.4" fill="#CE1126" opacity="0.90"/>
+<circle cx="133.0" cy="35.0" r="5.9" fill="none" stroke="#FF3344" stroke-width="2.2" opacity="0.95"/>
+<rect x="141.8" y="29.8" width="10.3" height="10.3" fill="#FCD116" opacity="0.85" rx="1.5"/>
+<polygon points="25.8,46.2 25.8,51.8 21.0,54.6 16.2,51.8 16.2,46.2 21.0,43.4" fill="#0077B6" opacity="0.90"/>
+<circle cx="35.0" cy="49.0" r="5.9" fill="none" stroke="#009A44" stroke-width="2.2" opacity="0.95"/>
+<rect x="43.8" y="43.8" width="10.3" height="10.3" fill="#FFFFFF" opacity="0.85" rx="1.5"/>
+<circle cx="63.0" cy="49.0" r="5.9" fill="#CCCCCC" opacity="0.90"/>
+<polygon points="77.0,42.5 82.6,52.2 71.4,52.2" fill="#00C4B4" opacity="0.95"/>
+<polygon points="91.0,42.5 95.2,49.0 91.0,55.5 86.8,49.0" fill="#0077B6" opacity="0.85"/>
+<polygon points="109.8,46.2 109.8,51.8 105.0,54.6 100.2,51.8 100.2,46.2 105.0,43.4" fill="#009A44" opacity="0.90"/>
+<circle cx="119.0" cy="49.0" r="5.9" fill="none" stroke="#00B050" stroke-width="2.2" opacity="0.95"/>
+<rect x="127.8" y="43.8" width="10.3" height="10.3" fill="#CCCCCC" opacity="0.85" rx="1.5"/>
+<circle cx="147.0" cy="49.0" r="5.9" fill="#00C4B4" opacity="0.90"/>
+<polygon points="161.0,42.5 166.6,52.2 155.4,52.2" fill="#0077B6" opacity="0.95"/>
+<polygon points="11.8,60.2 11.8,65.8 7.0,68.6 2.2,65.8 2.2,60.2 7.0,57.4" fill="#CE1126" opacity="0.90"/>
+<circle cx="21.0" cy="63.0" r="5.9" fill="none" stroke="#FF3344" stroke-width="2.2" opacity="0.95"/>
+<rect x="29.8" y="57.8" width="10.3" height="10.3" fill="#FCD116" opacity="0.85" rx="1.5"/>
+<circle cx="49.0" cy="63.0" r="5.9" fill="#F5A623" opacity="0.90"/>
+<polygon points="63.0,56.5 68.6,66.2 57.4,66.2" fill="#FFE066" opacity="0.95"/>
+<polygon points="77.0,56.5 81.2,63.0 77.0,69.5 72.8,63.0" fill="#CE1126" opacity="0.85"/>
+<polygon points="95.8,60.2 95.8,65.8 91.0,68.6 86.2,65.8 86.2,60.2 91.0,57.4" fill="#FF3344" opacity="0.90"/>
+<circle cx="105.0" cy="63.0" r="5.9" fill="none" stroke="#FF6677" stroke-width="2.2" opacity="0.95"/>
+<rect x="113.8" y="57.8" width="10.3" height="10.3" fill="#F5A623" opacity="0.85" rx="1.5"/>
+<circle cx="133.0" cy="63.0" r="5.9" fill="#FFE066" opacity="0.90"/>
+<polygon points="147.0,56.5 152.6,66.2 141.4,66.2" fill="#CE1126" opacity="0.95"/>
+<polygon points="161.0,56.5 165.2,63.0 161.0,69.5 156.8,63.0" fill="#FF3344" opacity="0.85"/>
+<circle cx="7.0" cy="77.0" r="5.9" fill="none" stroke="#00B050" stroke-width="2.2" opacity="0.95"/>
+<rect x="15.8" y="71.8" width="10.3" height="10.3" fill="#CCCCCC" opacity="0.85" rx="1.5"/>
+<circle cx="35.0" cy="77.0" r="5.9" fill="#00C4B4" opacity="0.90"/>
+<polygon points="49.0,70.5 54.6,80.2 43.4,80.2" fill="#0077B6" opacity="0.95"/>
+<polygon points="63.0,70.5 67.2,77.0 63.0,83.5 58.8,77.0" fill="#009A44" opacity="0.85"/>
+<polygon points="81.8,74.2 81.8,79.8 77.0,82.6 72.2,79.8 72.2,74.2 77.0,71.4" fill="#00B050" opacity="0.90"/>
+<circle cx="91.0" cy="77.0" r="5.9" fill="none" stroke="#4DC97A" stroke-width="2.2" opacity="0.95"/>
+<rect x="99.8" y="71.8" width="10.3" height="10.3" fill="#00C4B4" opacity="0.85" rx="1.5"/>
+<circle cx="119.0" cy="77.0" r="5.9" fill="#0077B6" opacity="0.90"/>
+<polygon points="133.0,70.5 138.6,80.2 127.4,80.2" fill="#009A44" opacity="0.95"/>
+<polygon points="147.0,70.5 151.2,77.0 147.0,83.5 142.8,77.0" fill="#00B050" opacity="0.85"/>
+<polygon points="165.8,74.2 165.8,79.8 161.0,82.6 156.2,79.8 156.2,74.2 161.0,71.4" fill="#4DC97A" opacity="0.90"/>
+<rect x="1.8" y="85.8" width="10.3" height="10.3" fill="#F5A623" opacity="0.85" rx="1.5"/>
+<circle cx="21.0" cy="91.0" r="5.9" fill="#FFE066" opacity="0.90"/>
+<polygon points="35.0,84.5 40.6,94.2 29.4,94.2" fill="#CE1126" opacity="0.95"/>
+<polygon points="49.0,84.5 53.2,91.0 49.0,97.5 44.8,91.0" fill="#FF3344" opacity="0.85"/>
+<polygon points="67.8,88.2 67.8,93.8 63.0,96.6 58.2,93.8 58.2,88.2 63.0,85.4" fill="#FF6677" opacity="0.90"/>
+<circle cx="77.0" cy="91.0" r="5.9" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity="0.95"/>
+<rect x="85.8" y="85.8" width="10.3" height="10.3" fill="#FFE066" opacity="0.85" rx="1.5"/>
+<circle cx="105.0" cy="91.0" r="5.9" fill="#CE1126" opacity="0.90"/>
+<polygon points="119.0,84.5 124.6,94.2 113.4,94.2" fill="#FF3344" opacity="0.95"/>
+<polygon points="133.0,84.5 137.2,91.0 133.0,97.5 128.8,91.0" fill="#FF6677" opacity="0.85"/>
+<polygon points="151.8,88.2 151.8,93.8 147.0,96.6 142.2,93.8 142.2,88.2 147.0,85.4" fill="#FFFFFF" opacity="0.90"/>
+<circle cx="161.0" cy="91.0" r="5.9" fill="none" stroke="#CCCCCC" stroke-width="2.2" opacity="0.95"/>
+<rect x="169.8" y="85.8" width="10.3" height="10.3" fill="#CE1126" opacity="0.85" rx="1.5"/>
+<polygon points="21.0,98.5 26.6,108.2 15.4,108.2" fill="#009A44" opacity="0.95"/>
+<polygon points="35.0,98.5 39.2,105.0 35.0,111.5 30.8,105.0" fill="#00B050" opacity="0.85"/>
+<polygon points="53.8,102.2 53.8,107.8 49.0,110.6 44.2,107.8 44.2,102.2 49.0,99.4" fill="#4DC97A" opacity="0.90"/>
+<circle cx="63.0" cy="105.0" r="5.9" fill="none" stroke="#FCD116" stroke-width="2.2" opacity="0.95"/>
+<rect x="71.8" y="99.8" width="10.3" height="10.3" fill="#0077B6" opacity="0.85" rx="1.5"/>
+<circle cx="91.0" cy="105.0" r="5.9" fill="#009A44" opacity="0.90"/>
+<polygon points="105.0,98.5 110.6,108.2 99.4,108.2" fill="#00B050" opacity="0.95"/>
+<polygon points="119.0,98.5 123.2,105.0 119.0,111.5 114.8,105.0" fill="#4DC97A" opacity="0.85"/>
+<polygon points="137.8,102.2 137.8,107.8 133.0,110.6 128.2,107.8 128.2,102.2 133.0,99.4" fill="#FCD116" opacity="0.90"/>
+<circle cx="147.0" cy="105.0" r="5.9" fill="none" stroke="#F5A623" stroke-width="2.2" opacity="0.95"/>
+<rect x="155.8" y="99.8" width="10.3" height="10.3" fill="#009A44" opacity="0.85" rx="1.5"/>
+<circle cx="175.0" cy="105.0" r="5.9" fill="#00B050" opacity="0.90"/>
+<polygon points="189.0,98.5 194.6,108.2 183.4,108.2" fill="#4DC97A" opacity="0.95"/>
+<circle cx="77.0" cy="119.0" r="5.9" fill="#FF3344" opacity="0.90"/>
+<polygon points="91.0,112.5 96.6,122.2 85.4,122.2" fill="#FF6677" opacity="0.95"/>
+<polygon points="105.0,112.5 109.2,119.0 105.0,125.5 100.8,119.0" fill="#FFFFFF" opacity="0.85"/>
+<polygon points="123.8,116.2 123.8,121.8 119.0,124.6 114.2,121.8 114.2,116.2 119.0,113.4" fill="#CCCCCC" opacity="0.90"/>
+<circle cx="133.0" cy="119.0" r="5.9" fill="none" stroke="#00C4B4" stroke-width="2.2" opacity="0.95"/>
+<rect x="141.8" y="113.8" width="10.3" height="10.3" fill="#FF3344" opacity="0.85" rx="1.5"/>
+<circle cx="161.0" cy="119.0" r="5.9" fill="#FF6677" opacity="0.90"/>
+<polygon points="175.0,112.5 180.6,122.2 169.4,122.2" fill="#FFFFFF" opacity="0.95"/>
+<polygon points="91.0,126.5 95.2,133.0 91.0,139.5 86.8,133.0" fill="#FCD116" opacity="0.85"/>
+<polygon points="109.8,130.2 109.8,135.8 105.0,138.6 100.2,135.8 100.2,130.2 105.0,127.4" fill="#F5A623" opacity="0.90"/>
+<circle cx="119.0" cy="133.0" r="5.9" fill="none" stroke="#FFE066" stroke-width="2.2" opacity="0.95"/>
+<rect x="127.8" y="127.8" width="10.3" height="10.3" fill="#00B050" opacity="0.85" rx="1.5"/>
+<circle cx="147.0" cy="133.0" r="5.9" fill="#4DC97A" opacity="0.90"/>
+<polygon points="161.0,126.5 166.6,136.2 155.4,136.2" fill="#FCD116" opacity="0.95"/>
+<polygon points="175.0,126.5 179.2,133.0 175.0,139.5 170.8,133.0" fill="#F5A623" opacity="0.85"/>
+<polygon points="95.8,144.2 95.8,149.8 91.0,152.6 86.2,149.8 86.2,144.2 91.0,141.4" fill="#00C4B4" opacity="0.90"/>
+<circle cx="105.0" cy="147.0" r="5.9" fill="none" stroke="#0077B6" stroke-width="2.2" opacity="0.95"/>
+<rect x="113.8" y="141.8" width="10.3" height="10.3" fill="#FF6677" opacity="0.85" rx="1.5"/>
+<circle cx="133.0" cy="147.0" r="5.9" fill="#FFFFFF" opacity="0.90"/>
+<polygon points="147.0,140.5 152.6,150.2 141.4,150.2" fill="#CCCCCC" opacity="0.95"/>
+<polygon points="161.0,140.5 165.2,147.0 161.0,153.5 156.8,147.0" fill="#00C4B4" opacity="0.85"/>
+<polygon points="179.8,144.2 179.8,149.8 175.0,152.6 170.2,149.8 170.2,144.2 175.0,141.4" fill="#0077B6" opacity="0.90"/>
+<circle cx="91.0" cy="161.0" r="5.9" fill="none" stroke="#CE1126" stroke-width="2.2" opacity="0.95"/>
+<rect x="99.8" y="155.8" width="10.3" height="10.3" fill="#4DC97A" opacity="0.85" rx="1.5"/>
+<circle cx="119.0" cy="161.0" r="5.9" fill="#FCD116" opacity="0.90"/>
+<polygon points="133.0,154.5 138.6,164.2 127.4,164.2" fill="#F5A623" opacity="0.95"/>
+<polygon points="147.0,154.5 151.2,161.0 147.0,167.5 142.8,161.0" fill="#FFE066" opacity="0.85"/>
+<polygon points="165.8,158.2 165.8,163.8 161.0,166.6 156.2,163.8 156.2,158.2 161.0,155.4" fill="#CE1126" opacity="0.90"/>
+<rect x="85.8" y="169.8" width="10.3" height="10.3" fill="#FFFFFF" opacity="0.85" rx="1.5"/>
+<circle cx="105.0" cy="175.0" r="5.9" fill="#CCCCCC" opacity="0.90"/>
+<polygon points="119.0,168.5 124.6,178.2 113.4,178.2" fill="#00C4B4" opacity="0.95"/>
+<polygon points="133.0,168.5 137.2,175.0 133.0,181.5 128.8,175.0" fill="#0077B6" opacity="0.85"/>
+<polygon points="151.8,172.2 151.8,177.8 147.0,180.6 142.2,177.8 142.2,172.2 147.0,169.4" fill="#009A44" opacity="0.90"/>
+<circle cx="161.0" cy="175.0" r="5.9" fill="none" stroke="#00B050" stroke-width="2.2" opacity="0.95"/>
+<circle cx="91.0" cy="189.0" r="5.9" fill="#F5A623" opacity="0.90"/>
+<polygon points="105.0,182.5 110.6,192.2 99.4,192.2" fill="#FFE066" opacity="0.95"/>
+<polygon points="119.0,182.5 123.2,189.0 119.0,195.5 114.8,189.0" fill="#CE1126" opacity="0.85"/>
+<polygon points="137.8,186.2 137.8,191.8 133.0,194.6 128.2,191.8 128.2,186.2 133.0,183.4" fill="#FF3344" opacity="0.90"/>
+<circle cx="147.0" cy="189.0" r="5.9" fill="none" stroke="#FF6677" stroke-width="2.2" opacity="0.95"/>
+<rect x="155.8" y="183.8" width="10.3" height="10.3" fill="#F5A623" opacity="0.85" rx="1.5"/>
+<polygon points="91.0,196.5 96.6,206.2 85.4,206.2" fill="#0077B6" opacity="0.95"/>
+<polygon points="105.0,196.5 109.2,203.0 105.0,209.5 100.8,203.0" fill="#009A44" opacity="0.85"/>
+<polygon points="123.8,200.2 123.8,205.8 119.0,208.6 114.2,205.8 114.2,200.2 119.0,197.4" fill="#00B050" opacity="0.90"/>
+<circle cx="133.0" cy="203.0" r="5.9" fill="none" stroke="#4DC97A" stroke-width="2.2" opacity="0.95"/>
+<rect x="141.8" y="197.8" width="10.3" height="10.3" fill="#00C4B4" opacity="0.85" rx="1.5"/>
+<polygon points="91.0,210.5 95.2,217.0 91.0,223.5 86.8,217.0" fill="#FF3344" opacity="0.85"/>
+<polygon points="109.8,214.2 109.8,219.8 105.0,222.6 100.2,219.8 100.2,214.2 105.0,211.4" fill="#FF6677" opacity="0.90"/>
+<circle cx="119.0" cy="217.0" r="5.9" fill="none" stroke="#FFFFFF" stroke-width="2.2" opacity="0.95"/>
+<rect x="127.8" y="211.8" width="10.3" height="10.3" fill="#FFE066" opacity="0.85" rx="1.5"/>
+<circle cx="147.0" cy="217.0" r="5.9" fill="#CE1126" opacity="0.90"/>
+<circle cx="105.0" cy="231.0" r="5.9" fill="none" stroke="#FCD116" stroke-width="2.2" opacity="0.95"/>
+<rect x="113.8" y="225.8" width="10.3" height="10.3" fill="#0077B6" opacity="0.85" rx="1.5"/>
+<circle cx="133.0" cy="231.0" r="5.9" fill="#009A44" opacity="0.90"/>
+<rect x="99.8" y="239.8" width="10.3" height="10.3" fill="#CE1126" opacity="0.85" rx="1.5"/>
+<circle cx="119.0" cy="245.0" r="5.9" fill="#FF3344" opacity="0.90"/>
+<polygon points="133.0,238.5 138.6,248.2 127.4,248.2" fill="#FF6677" opacity="0.95"/></g><path d="M 34.6,7.5 L 80.3,3.2 L 122.9,23.2 L 157.1,27.8 L 175.7,93.3 L 198.0,94.4 L 177.1,141.4 L 171.1,172.7 L 167.1,188.8 L 152.9,197.7 L 152.3,220.5 L 145.4,230.8 L 134.3,245.8 L 130.0,254.7 L 104.3,257.9 L 100.3,251.8 L 94.3,238.6 L 85.1,197.0 L 86.3,156.0 L 78.0,131.8 L 61.1,112.9 L 58.9,112.5 L 56.0,113.3 L 51.1,115.4 L 42.9,117.2 L 40.0,116.8 L 30.0,119.7 L 22.0,110.8 L 13.7,105.1 L 8.3,96.5 L 3.7,91.5 L 1.4,83.0 L 2.9,61.6 L 2.9,59.5 L 13.7,50.9 L 26.6,36.7 Z" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/></svg>
+      <div class="nav-wordmark">
+        <span class="nw-dig">DIGITAL</span>
+        <span class="nw-fut">Futures</span>
+        <span class="nw-afr">Africa</span>
+      </div>
+    </a>
+    <div class="nav-desktop">
+      <a href="../index.html">Home</a>
+      <div class="nav-dd">
+        <button class="nav-dd-trigger" aria-haspopup="true" aria-expanded="false">
+          Programmes
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dd-panel">
+            <span class="nav-dd-group-label">PROGRAMMES</span>
+            <div class="nav-dd-group-item"><div class="nav-dd-group-item-left"><div class="nav-dd-icon" style="background:rgba(100,116,139,.2)">🎯</div><div><span class="nav-dd-name">Professional Programmes</span><span class="nav-dd-sub">9 programmes</span></div></div><svg class="nav-dd-group-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M9 18l6-6-6-6"/></svg><div class="nav-dd-flyout"><span class="nav-dd-flyout-label">PROFESSIONAL PROGRAMMES</span>
+              <a href="../programmes/digital-literacy.html" class="nav-dd-item"><div class="nav-dd-icon" style="background:rgba(0,154,68,.15)">💻</div><div><span class="nav-dd-name">Digital Literacy</span><span class="nav-dd-sub">Foundation · Free</span></div></a>
+              <a href="../programmes/data-analytics.html" class="nav-dd-item"><div class="nav-dd-icon" style="background:rgba(252,209,22,.15)">📊</div><div><span class="nav-dd-name">Data Analytics</span><span class="nav-dd-sub">Intermediate · Subsidised</span></div></a>
+              <a href="../programmes/ai-strategy.html" class="nav-dd-item"><div class="nav-dd-icon" style="background:rgba(206,17,38,.15)">🤖</div><div><span class="nav-dd-name">AI Strategy</span><span class="nav-dd-sub">Advanced · Executive</span></div></a>
+              <a href="../programmes/entrepreneurship.html" class="nav-dd-item"><div class="nav-dd-icon" style="background:rgba(0,196,180,.15)">🚀</div><div><span class="nav-dd-name">Entrepreneurship</span><span class="nav-dd-sub">Accelerator · Fellowship</span></div></a>
+              <a href="../programmes/public-sector.html" class="nav-dd-item"><div class="nav-dd-icon" style="background:rgba(0,154,68,.12)">🏛️</div><div><span class="nav-dd-name">Public Sector</span><span class="nav-dd-sub">Government · Institutional</span></div></a>
+              <a href="../programmes/women-in-digital.html" class="nav-dd-item"><div class="nav-dd-icon" style="background:rgba(252,209,22,.12)">👩‍💻</div><div><span class="nav-dd-name">Women in Digital</span><span class="nav-dd-sub">Gender-Focused · Free</span></div></a>
+              <a href="../programmes/advanced-ml-genai.html" class="nav-dd-item"><div class="nav-dd-icon" style="background:rgba(124,58,237,.15)">🧠</div><div><span class="nav-dd-name">Advanced ML &amp; GenAI</span><span class="nav-dd-sub">Technical · Specialist</span></div></a>
+              <a href="../programmes/cloud-devops.html" class="nav-dd-item"><div class="nav-dd-icon" style="background:rgba(14,165,233,.15)">☁️</div><div><span class="nav-dd-name">Cloud &amp; DevOps</span><span class="nav-dd-sub">Technical · Professional</span></div></a>
+              <a href="../programmes/product-project-management.html" class="nav-dd-item"><div class="nav-dd-icon" style="background:rgba(0,196,180,.15)">📋</div><div><span class="nav-dd-name">Product &amp; PM</span><span class="nav-dd-sub">Professional · All Backgrounds</span></div></a>
+            </div></div>
+            <div class="nav-dd-group-item"><div class="nav-dd-group-item-left"><div class="nav-dd-icon" style="background:rgba(245,158,11,.15)">🏫</div><div><span class="nav-dd-name">K-12 Programmes</span><span class="nav-dd-sub">3 programmes</span></div></div><svg class="nav-dd-group-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M9 18l6-6-6-6"/></svg><div class="nav-dd-flyout"><span class="nav-dd-flyout-label">K-12 PROGRAMMES</span>
+              <a href="../programmes/k12-curriculum.html" class="nav-dd-item"><div class="nav-dd-icon" style="background:rgba(245,158,11,.15)">🎓</div><div><span class="nav-dd-name">K-12 Coding, Robotics &amp; AI</span><span class="nav-dd-sub">Schools · Curriculum</span></div></a>
+              <a href="../programmes/k12-entrepreneurship.html" class="nav-dd-item"><div class="nav-dd-icon" style="background:rgba(245,158,11,.12)">🚀</div><div><span class="nav-dd-name">K-12 Entrepreneurship</span><span class="nav-dd-sub">Young Founders Track</span></div></a>
+              <a href="../programmes/k12-social-media-factchecking.html" class="nav-dd-item"><div class="nav-dd-icon" style="background:rgba(0,196,180,.12)">🔍</div><div><span class="nav-dd-name">K-12 Fact-Checking</span><span class="nav-dd-sub">Digital Citizenship</span></div></a>
+            </div></div>
+            <div class="nav-dd-sep"></div>
+            <a href="../index.html#programmes" class="nav-dd-item"><div class="nav-dd-icon" style="background:rgba(255,255,255,.06)">📋</div><div><span class="nav-dd-name">All Programmes</span><span class="nav-dd-sub">View full overview</span></div></a>
+          </div>
+      </div>
+      <a href="../index.html#impact">Impact</a>
+      <a href="../index.html#news">News</a>
+      <a href="../index.html#team">Team</a>
+      <a href="../index.html#cta" class="nav-cta-btn">Get Involved</a>
+    </div>
+    <button id="dfa-burger" class="nav-burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div id="dfa-mobile-menu">
+  <a href="../index.html">Home</a>
+  
+  <div class="mm-section">PROFESSIONAL PROGRAMMES</div>
+  <a href="../programmes/digital-literacy.html">💻&nbsp; Digital Literacy</a>
+  <a href="../programmes/data-analytics.html">📊&nbsp; Data Analytics</a>
+  <a href="../programmes/ai-strategy.html">🤖&nbsp; AI Strategy</a>
+  <a href="../programmes/entrepreneurship.html">🚀&nbsp; Entrepreneurship</a>
+  <a href="../programmes/public-sector.html">🏛️&nbsp; Public Sector</a>
+  <a href="../programmes/women-in-digital.html">👩‍💻&nbsp; Women in Digital</a>
+  <a href="../programmes/advanced-ml-genai.html">🧠&nbsp; Advanced ML &amp; GenAI</a>
+  <a href="../programmes/cloud-devops.html">☁️&nbsp; Cloud &amp; DevOps</a>
+  <a href="../programmes/product-project-management.html">📋&nbsp; Product &amp; PM</a>
+  <div class="mm-section">K-12 PROGRAMMES</div>
+  <a href="../programmes/k12-curriculum.html">🎓&nbsp; K-12 Coding, Robotics &amp; AI</a>
+  <a href="../programmes/k12-entrepreneurship.html" style="padding-left:28px;font-size:12px">↳ K-12 Entrepreneurship</a>
+  <a href="../programmes/k12-social-media-factchecking.html" style="padding-left:28px;font-size:12px">↳ K-12 Fact-Checking</a>
+  <div class="mm-section">NEWS</div>
+  <a href="../news/ai-literacy-initiative.html">AI Literacy Initiative Launch</a><a href="../news/digital-skills-gap-report.html">Digital Skills Gap Report</a><a href="../news/university-partnerships.html">University Partnerships</a>
+  <a href="../index.html#impact">Impact</a>
+  <a href="../index.html#team">Team</a>
+  <a href="../index.html#cta" class="mm-cta">Get Involved &#8594;</a>
+</div><div class="stripes"><s></s><s></s><s></s></div><article><header class="art-hero"><div class="art-hero-bg"></div><div class="art-hero-glow"></div><div class="art-hero-glow2"></div><div class="wrap" style="position:relative;z-index:2"><a href="../index.html#news" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--ash);margin-bottom:28px;transition:color .2s" onmouseover="this.style.color='#FCD116'" onmouseout="this.style.color='var(--ash)'">&#8592; Back to News</a><div class="art-meta-bar"><span class="art-cat ">ANNOUNCEMENT</span><span class="art-date">February 2026</span><span class="art-read">&#183; 6 min read</span></div><h1 class="art-h1">DFA Launches AI Literacy Initiative<br>for <em>1 Million Learners</em> by 2027</h1><p class="art-deck">In partnership with the African Union and Google.org, Digital Futures Africa announces its most ambitious programme yet &#8212; bringing AI literacy to one million Africans across 35 countries.</p><div class="art-byline"><div class="art-avatar green">👩🏾‍💼</div><div><div class="art-author-name">Dr. Amara Diallo</div><div class="art-author-role">Co-Founder &amp; CEO, Digital Futures Africa</div></div></div></div></header><div class="art-img"><div class="art-img-fill c1">🌍</div><div class="art-img-caption">DFA&#8217;s AI literacy initiative will reach learners in 35 African countries through a network of community hubs, universities, and mobile learning centres.</div></div><section class="art-body"><div class="wrap"><div class="art-layout"><div class="art-content rv">
+<p><strong>Nairobi / Addis Ababa, February 2026</strong> &#8212; Digital Futures Africa today announced the launch of its Africa AI Literacy Initiative, a landmark programme that will provide foundational AI literacy training to one million African learners across 35 countries by the end of 2027. The initiative is being delivered in partnership with the African Union Commission and supported by a $28 million commitment from Google.org.</p>
+
+<div class="pullquote"><p>&#8220;Every African &#8212; from a student in Lagos to a farmer in the Rift Valley &#8212; deserves to understand how AI will shape their world and how they can benefit from it.&#8221;</p></div>
+
+<h2>Why AI Literacy <em>Now</em></h2>
+<p>Artificial intelligence is no longer a technology of the future &#8212; it is reshaping African economies, governments, and communities today. From AI-driven agricultural advisory services in East Africa, to automated loan underwriting in West African fintech, to diagnostic AI tools entering primary healthcare clinics across the continent, the impact of AI on everyday African life is accelerating rapidly.</p>
+<p>Yet the vast majority of Africans have had no opportunity to understand what AI is, how it works, what its risks and limitations are, or how they might use it to improve their livelihoods. This lack of AI literacy is not merely an educational gap &#8212; it is an equity issue with profound economic and social consequences.</p>
+<p><strong>&#8220;AI is going to affect every African&#8217;s job, health, finances, and civic life in the next decade,&#8221;</strong> said Dr. Amara Diallo, Co-Founder and CEO of Digital Futures Africa. <strong>&#8220;Every African &#8212; from a student in Lagos to a farmer in the Rift Valley &#8212; deserves to understand how AI will shape their world and how they can benefit from it. That is what this initiative is about.&#8221;</strong></p>
+
+<h2>Programme Design &amp; <em>Delivery</em></h2>
+<p>The Africa AI Literacy Initiative is built on four core components designed to reach diverse African audiences at scale:</p>
+<ul>
+  <li><strong>Community Hub Learning:</strong> 500 learning hubs across 35 countries will deliver in-person AI literacy workshops in local languages, reaching communities with limited internet connectivity.</li>
+  <li><strong>Mobile-First Digital Modules:</strong> A suite of 12 short-course AI literacy modules, available offline through the DFA mobile app in 14 African languages, accessible on any smartphone.</li>
+  <li><strong>Train-the-Trainer Programme:</strong> 5,000 community educators and teachers will be trained as AI literacy facilitators, creating a sustainable, scalable delivery network across the continent.</li>
+  <li><strong>University Integration:</strong> Foundational AI literacy content will be integrated into general education curricula at 120 partner universities across Africa.</li>
+</ul>
+
+<h3>African Union Partnership</h3>
+<p>The initiative has been formally endorsed by the African Union Commission as part of the AU Digital Transformation Strategy for Africa 2030. H.E. Moussa Faki Mahamat, Chairperson of the African Union Commission, described the initiative as <strong>&#8220;a critical investment in the human capital of the continent&#8221;</strong> at the launch ceremony held at AU headquarters in Addis Ababa.</p>
+<p>The AU partnership provides political endorsement and facilitates government-level engagement in all 55 AU member states, enabling DFA to work directly with Ministries of Education and Digital Economy to integrate AI literacy into national education systems.</p>
+
+<h2>Google.org Funding &amp; <em>Technology Support</em></h2>
+<p>Google.org&#8217;s $28 million commitment over three years represents one of the largest single grants ever made to an African education initiative. Beyond funding, Google is contributing technology infrastructure, AI tools access, and engineering support to help DFA build and scale its mobile learning platform.</p>
+<p><strong>&#8220;Ensuring that people across Africa can participate in the AI economy &#8212; not just as consumers but as informed citizens and creators &#8212; is one of the most important investments we can make,&#8221;</strong> said the Google.org Africa lead at the launch.</p>
+
+<h2>Measuring <em>Impact</em></h2>
+<p>The initiative will track outcomes rigorously across three dimensions: breadth (number of learners reached and countries covered), depth (AI literacy assessment scores pre and post programme), and equity (gender parity, urban/rural balance, and reach to underserved communities). All impact data will be published quarterly in DFA&#8217;s open Impact Dashboard.</p>
+<p>Applications for community hub partnerships and train-the-trainer programme places are now open at digitalfuturesafrica.org. The first cohort of community hub facilitators begins training in March 2026.</p>
+</div><aside><div class="sidebar-card"><h4>KEY TOPICS</h4><span class="sidebar-tag">AI Literacy</span><span class="sidebar-tag">African Union</span><span class="sidebar-tag">Google.org</span><span class="sidebar-tag">Digital Skills</span><span class="sidebar-tag">Pan-African</span><span class="sidebar-tag">1 Million Learners</span><span class="sidebar-tag">Community Hubs</span><span class="sidebar-tag">2027 Target</span></div><div class="sidebar-card"><h4>RELATED ARTICLES</h4><a href="digital-skills-gap-report.html" class="related-item"><span class="related-cat">RESEARCH</span><span class="related-title">Africa&#8217;s Digital Skills Gap Could Cost $500B in Lost GDP by 2035</span></a><a href="university-partnerships.html" class="related-item"><span class="related-cat">PARTNERSHIP</span><span class="related-title">DFA Partners with 50 African Universities on Digital Skills</span></a></div></aside></div></div></section><section class="art-cta"><div class="wrap"><div class="art-cta-in"><div><h2>Shape Africa&#8217;s<br><em>Digital Future</em></h2><p>Explore DFA&#8217;s programmes and discover how you can become part of Africa&#8217;s digital transformation story.</p></div><div class="art-cta-btns"><a href="../index.html#programmes" class="btn btn-g">Explore Programmes</a><a href="../index.html#news" class="btn btn-o">More News</a></div></div></div></section></article><footer><div class="wrap foot-in"><span class="foot-copy">&#169; 2026 Digital Futures Africa. All rights reserved.</span><nav class="foot-nav"><a href="../index.html#programmes">Programmes</a><a href="../index.html#news">News</a><a href="../index.html#cta">Get Involved</a><a href="#">Privacy</a></nav></div></footer>
+
+
+
+
+<script>
+(function() {
+  /* ── burger / mobile menu ── */
+  var burger = document.getElementById('dfa-burger');
+  var mobileMenu = document.getElementById('dfa-mobile-menu');
+  if (burger && mobileMenu) {
+    burger.addEventListener('click', function() {
+      var isOpen = mobileMenu.classList.toggle('open');
+      burger.classList.toggle('open', isOpen);
+      burger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    mobileMenu.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        mobileMenu.classList.remove('open');
+        burger.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+
+  /* ── dropdown: CSS :hover handles desktop; JS .open handles touch-click ── */
+  (function() {
+    var openDd = null;
+
+    document.querySelectorAll('.nav-dd').forEach(function(dd) {
+      var trigger = dd.querySelector('.nav-dd-trigger');
+      if (!trigger) return;
+
+      trigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (openDd && openDd !== dd) {
+          openDd.classList.remove('open');
+          openDd.querySelector('.nav-dd-trigger').setAttribute('aria-expanded', 'false');
+        }
+        var isOpen = dd.classList.toggle('open');
+        trigger.setAttribute('aria-expanded', isOpen);
+        openDd = isOpen ? dd : null;
+      });
+    });
+
+    document.addEventListener('click', function() {
+      if (openDd) {
+        openDd.classList.remove('open');
+        var t = openDd.querySelector('.nav-dd-trigger');
+        if (t) t.setAttribute('aria-expanded', 'false');
+        openDd = null;
+      }
+    });
+  })();
+
+  /* ── nav shadow on scroll ── */
+  var nav = document.getElementById('dfa-nav');
+  if (nav) {
+    window.addEventListener('scroll', function() {
+      nav.style.boxShadow = window.scrollY > 40
+        ? '0 4px 32px rgba(0,0,0,0.5)'
+        : 'none';
+    }, { passive: true });
+  }
+
+  /* ── scroll reveal ── */
+  var revealEls = document.querySelectorAll('.rv, .reveal');
+  if ('IntersectionObserver' in window && revealEls.length) {
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('on', 'visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.07 });
+    revealEls.forEach(function(el) { io.observe(el); });
+  }
+})();
+</script>
+
+</body></html>
